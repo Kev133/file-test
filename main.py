@@ -1,18 +1,16 @@
 
 # nacteni dat
 mojedata = open("data.txt", "r")
-cely_seznam = mojedata.read().splitlines()
-pocet_radku = len(cely_seznam)
+seznam_str = mojedata.read().splitlines()
+pocet_radku = len(seznam_str)
 
 # loop pro převedení str v seznamu na float, urcite jde i nějak lip
 # funkce pro prevedeni dat ze souboru do seznamu rovnou v int, popř. float?
-pokus = list(map(float, cely_seznam))
-print(pokus)
-for i in range(0, pocet_radku):
-    cely_seznam[i] = float(cely_seznam[i])
+seznam_float = list(map(float, seznam_str))
+#for i in range(0, pocet_radku):
+#    cely_seznam[i] = float(cely_seznam[i])
 
-mereni = cely_seznam[13:]
-print(mereni)
+mereni = seznam_float[13:]
 
 # soucet a prumer mereni
 
@@ -22,7 +20,7 @@ prumer=soucet/delitel
 print("Součet všech měření je ", soucet)
 print("Průměr měření je ", prumer)
 # info mereni
-datum = int(cely_seznam[8])
+datum = int(seznam_float[8])
 print("Datum měření je ", datum, ", ve formátu ddmmr (den měsíc a rok)")
 mojedata.close()
 
