@@ -30,4 +30,3 @@ novy_soubor.write(str(prumer)+"\n")
 novy_soubor.write(str(soucet)+"\n")
 novy_soubor.write(str(datum))
 novy_soubor.close()
-# scipy optimize, co je optimalizace in general, github, konvoluce pochopit, pochopit rovnice, formatovani strings {}
